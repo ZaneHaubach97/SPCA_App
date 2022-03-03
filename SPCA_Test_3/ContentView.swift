@@ -26,11 +26,13 @@ struct ContentView: View {
                                 ForEach(viewModel.animals){ animals in
                                     NavigationLink(destination: DetailView(animal: animals) ){
                                         
-                                        VStack(alignment: .center){
-                                            ZStack{
-                                                URLImage(urlString: animals.primary_photo_cropped?.medium ?? "")
-                                            }
-                                            .cornerRadius(30)
+                                        VStack{
+                                            URLImage(urlString: animals.primary_photo_cropped?.medium ?? "")
+                                                .overlay(
+                                                    RoundedRectangle(cornerRadius: 30)
+                                                        .stroke(Color.white, lineWidth: 10)
+                                                )
+                                            
                                             VStack(alignment: .center){
                                                 Text(animals.name)
                                                     .font(.title)
@@ -45,6 +47,11 @@ struct ContentView: View {
                                                     .foregroundColor(.gray)
                                             }
                                         }
+                                        .background(Color.white)
+                                        .cornerRadius(30.0)
+                                        
+                                        
+
                                     }
                                 }
                             }
@@ -52,6 +59,7 @@ struct ContentView: View {
                                 viewModel.fetchToken()
                             }
                         }
+                        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(red: 0.126, green: 0.347, blue: 0.599)/*@END_MENU_TOKEN@*/)
                     }
                     //Splash Screen
                     ZStack{
@@ -94,6 +102,7 @@ struct URLImage: View{
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 320, height: 320)
+                .cornerRadius(30.0)
                 //.clipped()
 
         }
