@@ -11,7 +11,7 @@ import SwiftUI
 struct SPCA_Test_3App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(filterCriteria: .init(type: "", age: "", gender: "", size: ""))
         }
     }
 }

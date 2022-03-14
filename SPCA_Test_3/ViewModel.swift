@@ -21,14 +21,13 @@ class ViewModel: ObservableObject{
         let task = URLSession.shared.dataTask(with: request) {data, _, error in
             guard let data = data, error == nil else{return}
             let APItoken: token = try! JSONDecoder().decode(token.self, from: data)
-            let str = APItoken.access_token
-            let animalList = self.fetchData(accessToken: APItoken.access_token)
+            self.fetchData(accessToken: APItoken.access_token)
         }
         task.resume()
     }
     
-    func fetchData(accessToken: String) -> [Animal]{
-        guard let url = URL(string: "https://api.petfinder.com/v2/animals?organization=VA174") else{return[]}
+    func fetchData(accessToken: String){
+        let url = URL(string: "https://api.petfinder.com/v2/animals?organization=VA174")!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue((" Bearer " + accessToken), forHTTPHeaderField: "Authorization")
@@ -45,6 +44,7 @@ class ViewModel: ObservableObject{
             }
         }
         task.resume()
-        return []
     }
+    
+
 }
