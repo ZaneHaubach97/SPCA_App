@@ -12,7 +12,7 @@ struct FilterView: View {
     @State private var didTapAP:Bool = false
     @State private var didTapDog:Bool = false
     @State private var didTapCat:Bool = false
-    @State private var didTapSubmit:Bool = false
+    @State private var didTapReset:Bool = false
     @State private var didTapMale:Bool = false
     @State private var didTapFemale:Bool = false
     @Binding var showFilterMenu: Bool
@@ -21,6 +21,45 @@ struct FilterView: View {
     
     var body: some View {
         VStack(alignment: .leading){
+            
+            HStack{
+                //code for reset button
+                HStack {
+                    Button("Reset    "){
+                        self.didTapReset = true;
+                        filterCriteria.type = ""
+                        filterCriteria.gender = ""
+                        filterCriteria.age = ""
+                        filterCriteria.size = ""
+                        self.didTapAP = false; self.didTapCat = false; self.didTapDog = false; self.didTapMale = false; self.didTapFemale = false
+                    }
+                    .font(.system(size: 18))
+                    .background(didTapReset ? SPCABlue : SPCABlue)
+                    .cornerRadius(15.0)
+                .foregroundColor(didTapReset ? Color.white : Color.white)
+                }
+                .padding(.top, 20)
+                //Spacer()
+                
+                Text("Filter")
+                    .font(.title)
+                    .multilineTextAlignment(.center)
+                    .padding([.top, .leading, .trailing])
+                    .foregroundColor(SPCABlue)
+                
+                Button {
+                    withAnimation{
+                        showFilterMenu.toggle()
+                    }
+                } label: {
+                    Image(systemName: "x.circle")
+                }
+                .padding([.top, .leading], 11.0)
+                .scaleEffect(1.5)
+                .foregroundColor(SPCABlue)
+            }
+            .padding(.top, 40)
+            
             HStack {
                 
                 //Code for top row of filter options (type: all pets, dogs, cats)
@@ -49,7 +88,7 @@ struct FilterView: View {
                 .cornerRadius(15.0)
                 .foregroundColor(didTapCat ? Color.white : Color.white)
             }
-            .padding(.top, 100)
+            .padding(.top, 50)
             .foregroundColor(Color.white)
             
             
@@ -117,33 +156,34 @@ struct FilterView: View {
                     .foregroundColor(Color.black)
             }
             .padding(.top, 40)
-            
-            
-            
-            //code for reset button
-            HStack {
-                Button("Reset    "){
-                    self.didTapSubmit = true;
-                    filterCriteria.type = ""
-                    filterCriteria.gender = ""
-                    filterCriteria.age = ""
-                    filterCriteria.size = ""
-                    self.didTapAP = false; self.didTapCat = false; self.didTapDog = false; self.didTapMale = false; self.didTapFemale = false
-                }
-                .font(.system(size: 18))
-                .background(didTapSubmit ? SPCABlue : Color.yellow)
-                .cornerRadius(15.0)
-            .foregroundColor(didTapSubmit ? Color.white : Color.white)
-            }
-            .padding(.top, 30)
             Spacer()
+            
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color.white)
+        .background(Color(red: 0.956, green: 0.961, blue: 0.969))
         .edgesIgnoringSafeArea(.all)
     }
 }
+
+func filterAnimals(animals: [Animal], by filters: criteria) -> [Animal]{
+    var filteredAnimals = animals
+    
+    if(filters.type != ""){
+        filteredAnimals = filteredAnimals.filter({ $0.type == filters.type })
+    }
+    if(filters.age != ""){
+        filteredAnimals = filteredAnimals.filter({ $0.age == filters.age })
+    }
+    if(filters.gender != ""){
+        filteredAnimals = filteredAnimals.filter({ $0.gender == filters.gender })
+    }
+    if(filters.size != ""){
+        filteredAnimals = filteredAnimals   .filter({ $0.size == filters.size })
+    }
+    return filteredAnimals
+}
+
 struct FilterView_Previews: PreviewProvider {
     static var previews: some View {
         FilterView(showFilterMenu: .constant(false), filterCriteria: .constant(.init(type: "", age: "", gender: "", size: "")))
