@@ -2,7 +2,7 @@
 //  URLImage.swift
 //  SPCA_Test_3
 //
-//  Created by Edward Haubach on 3/15/22.
+//  Created by Zane Haubach on 3/15/22.
 //
 
 import SwiftUI

@@ -12,9 +12,8 @@ struct PetView: View {
         @StateObject var viewModel = ViewModel()
         @State var animate: Bool = true
         @State var showFilterMenu = false
-        @State var animalList: [Animal] = []
         @State var filterCriteria: criteria
-        @State var emptyList = false
+        //@State var emptyList = false
         
         let SPCABlue = Color(red: 33/255, green: 88/255, blue: 153/255)
         let SPCABlueUI = UIColor(red: 33/255, green: 88/255, blue: 153/255, alpha: 1)
@@ -31,8 +30,6 @@ struct PetView: View {
             return GeometryReader{ geometry in
                 VStack{
                     ZStack{
-                        
-                        //content
                         ZStack(alignment: .leading){
                             NavigationView{
                                 ScrollView{
@@ -44,11 +41,11 @@ struct PetView: View {
                                                 .padding(.top, 300)
                                         }
                                         else{
-                                            ForEach(filteredList){ animals in
-                                                NavigationLink(destination: DetailView(animal: animals) ){
+                                            ForEach(filteredList){ animal in
+                                                NavigationLink(destination: DetailView(animal: animal) ){
                                                     
                                                     VStack{
-                                                        URLImage(urlString: animals.primary_photo_cropped?.medium ?? "")
+                                                        URLImage(urlString: animal.primary_photo_cropped?.medium ?? "")
                                                             .frame(width: 410, height: 410)
                                                             .cornerRadius(30.0)
                                                             .overlay(
@@ -57,16 +54,16 @@ struct PetView: View {
                                                             )
                                                         
                                                         VStack(alignment: .center){
-                                                            Text(animals.name)
+                                                            Text(animal.name)
                                                                 .font(.title)
                                                                 .foregroundColor(.white)
                                                                 .bold()
                                                                 .frame(width: 300, alignment: .center)
-                                                                Text(animals.age)
+                                                                Text(animal.age)
                                                                 .foregroundColor(.white)
                                                                 + Text(" - ")
                                                                 .foregroundColor(.white)
-                                                                + Text(animals.breeds.primary ?? "")
+                                                                + Text(animal.breeds.primary ?? "")
                                                                 .foregroundColor(.white)
                                                         }
                                                         .padding(.bottom)
@@ -115,7 +112,6 @@ struct PetView: View {
             .gesture(drag)
         }
     }
-
 
 struct PetView_Previews: PreviewProvider {
     static var previews: some View {
