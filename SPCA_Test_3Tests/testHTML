@@ -1,0 +1,10 @@
+<HTML>
+<BODY BGCOLOR="FFFFFF">
+<HR>
+<img src="testImage.jpg">
+<b>testB</b>
+<div class ="wpb_wrapper">
+    <p>testP</p>
+</div>
+</BODY>
+</HTML>
