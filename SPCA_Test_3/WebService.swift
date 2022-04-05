@@ -69,9 +69,3 @@ struct WebService: UIViewRepresentable{
         }
     }
 }
-
-
-    /*guard let myURL = url else{return}
-    
-    let request = URLRequest(url: myURL)
-    uiView.load(request)*/

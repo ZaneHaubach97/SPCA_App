@@ -77,7 +77,7 @@ struct PetView: View {
                                         }
                                     }
                                     .onAppear{
-                                        viewModel.fetchToken()
+                                        viewModel.doStuff()
                                     }
                                 }
                                 .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.white/*@END_MENU_TOKEN@*/)
