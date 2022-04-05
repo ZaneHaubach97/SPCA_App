@@ -1,1 +1,95 @@
-{"animals":[{"id":55194689,"organization_id":"VA174","url":"https:\/\/www.petfinder.com\/dog\/messi-55194689\/va\/winchester\/spca-of-winchester-va174\/?referrer_id=245b3c52-c43e-4807-ba76-d16282b0e4af","type":"testType","species":"testSpecies","breeds":{"primary":"testBreed","secondary":null,"mixed":false,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"testAge","gender":"testGender","size":"testSize","coat":null,"attributes":{"spayed_neutered":true,"house_trained":true,"declawed":true,"special_needs":true,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":true},"tags":[],"name":"testName","description":null,"organization_animal_id":"45254278","photos":[{"small":"","medium":"","large":"","full":""}],"primary_photo_cropped":{"small":"testPhoto","medium":"","large":"","full":""},"videos":[],"status":"adoptable","status_changed_at":"2022-04-03T15:06:28+0000","published_at":"2022-04-03T15:06:28+0000","distance":null,"contact":{"email":"spca@winchesterspca.org","phone":"(540) 662-8616","address":{"address1":"111 Featherbed Lane","address2":null,"city":"Winchester","state":"VA","postcode":"22601","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/55194689"},"type":{"href":"\/v2\/types\/dog"},"organization":{"href":"\/v2\/organizations\/va174"}}}]}
+{
+  "animals": [
+    {
+      "id": 55194689,
+      "organization_id": "VA174",
+      "url": "https://www.petfinder.com/dog/messi-55194689/va/winchester/spca-of-winchester-va174/?referrer_id=245b3c52-c43e-4807-ba76-d16282b0e4af",
+      "type": "testType",
+      "species": "testSpecies",
+      "breeds": {
+        "primary": "testBreed",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "testAge",
+      "gender": "testGender",
+      "size": "testSize",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": true,
+        "special_needs": true,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": true
+      },
+      "tags": [],
+      "name": "testName",
+      "description": null,
+      "organization_animal_id": "45254278",
+      "photos": [
+        {
+          "small": "",
+          "medium": "",
+          "large": "",
+          "full": ""
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "testPhoto",
+        "medium": "",
+        "large": "",
+        "full": ""
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2022-04-03T15:06:28+0000",
+      "published_at": "2022-04-03T15:06:28+0000",
+      "distance": null,
+      "contact": {
+        "email": "spca@winchesterspca.org",
+        "phone": "(540) 662-8616",
+        "address": {
+          "address1": "111 Featherbed Lane",
+          "address2": null,
+          "city": "Winchester",
+          "state": "VA",
+          "postcode": "22601",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/55194689"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/va174"
+        }
+      }
+    }
+  ],
+  "pagination": {
+    "count_per_page": 20,
+    "total_count": 1,
+    "current_page": 1,
+    "total_pages": 1,
+    "_links": {
+      "next": {
+        "href": "/v2/animals?organization=VA174&page=2"
+      }
+    }
+  }
+}
