@@ -9,7 +9,6 @@ import Foundation
 
 struct criteria{
     var type: String
-    var breed: String
     var age: String
     var gender: String
     var size: String
