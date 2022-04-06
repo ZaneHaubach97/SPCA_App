@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "76B38580-E28A-4454-B033-E7536514C19A"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74053145-56BE-405C-B612-AC3D4233B98D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPCA_Test_3/ViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "fetchData(request:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "74053145-56BE-405C-B612-AC3D4233B98D - d6bf0d7f54b3ef94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPCA_Test_3.ViewModel.fetchData(accessToken: Swift.String, completion: (SPCA_Test_3.AnimalResponse) -&gt; ()) -&gt; ()"
+                  moduleName = "SPCA_Test_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ehaubach/Documents/Zane_Appliactions/SPCA_Test_3/SPCA_Test_3/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "173">
+               </Location>
+               <Location
+                  uuid = "74053145-56BE-405C-B612-AC3D4233B98D - d6bf0d7f54b3ef94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SPCA_Test_3.ViewModel.fetchData(accessToken: Swift.String, completion: (SPCA_Test_3.AnimalResponse) -&gt; ()) -&gt; ()"
+                  moduleName = "SPCA_Test_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ehaubach/Documents/Zane_Appliactions/SPCA_Test_3/SPCA_Test_3/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "237">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "93F85C92-F07B-40EA-8EDE-EA51B5B6097C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPCA_Test_3Tests/SPCA_Test_3Tests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "testAPIResponse()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7BDE41E9-279E-4823-9C3D-440ADD30A4C5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPCA_Test_3/EventViewer.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "parseHTML(html:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
