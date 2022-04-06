@@ -98,6 +98,14 @@ struct DetailView: View {
             }
         }
         .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(red: 0.126, green: 0.347, blue: 0.599)/*@END_MENU_TOKEN@*/)
+        .toolbar{
+            ToolbarItem(placement: .principal){
+                Image("SPCA_logo_top")
+                    .resizable()
+                    .frame(width: 165.0, height: 65)
+                    .ignoresSafeArea()
+            }
+        }
     }
 }
 

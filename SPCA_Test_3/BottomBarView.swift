@@ -25,12 +25,12 @@ struct BottomBarView: View{
         TabView {
             PetView(filterCriteria: .init(type: "", age: "", gender: "", size: ""))
                 .tabItem {
-                    Image(systemName: "heart.fill")
+                    Image(systemName: "pawprint")
                     Text("Pets")
             }
             EventView()
                 .tabItem {
-                    Image(systemName: "person.fill")
+                    Image(systemName: "calendar")
                     Text("Events")
             }
         }
