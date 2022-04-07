@@ -13,7 +13,6 @@ struct PetView: View {
         @State var animate: Bool = true
         @State var showFilterMenu = false
         @State var filterCriteria: criteria
-        //@State var emptyList = false
         
         let SPCABlue = Color(red: 33/255, green: 88/255, blue: 153/255)
         let SPCABlueUI = UIColor(red: 33/255, green: 88/255, blue: 153/255, alpha: 1)
@@ -94,6 +93,9 @@ struct PetView: View {
                                             .resizable()
                                             .frame(width: 165.0, height: 65)
                                             .ignoresSafeArea()
+                                    }
+                                    ToolbarItem(placement: .navigationBarTrailing){
+                                        Link("Donate", destination: URL(string: "https://winchesterspca.org/donate/")!)
                                     }
                                 }
                             }
