@@ -31,15 +31,15 @@ This project is a George Mason University Capstone Project for SPCA of Wincheste
 This getting started is to provide a simple guide to begin developing on this project locally. Please check the prerequisites before following the installation steps.
 <!-- Prerequisites -->
 <div id="prerequisites"></div>
-<h2>Prerequisites</h2>
+<h4>Prerequisites</h4>
 <!-- Installation -->
 <div id="installation"></div>
-<h2>Installation</h2>
+<h4>Installation</h4>
 
 <!-- License -->
 <div id="license"></div>
+<h2>License</h2>
 This software has been distributed under the MIT License. Please refer to this <a href="https://mit-license.org/">link</a> for more information.
-<h2>Usage</h2>
 
 <!-- Contact -->
 <div id="contact"></div>
