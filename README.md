@@ -32,6 +32,10 @@ This getting started is to provide a simple guide to begin developing on this pr
 <!-- Prerequisites -->
 <div id="prerequisites"></div>
 <h4>Prerequisites</h4>
+<ul>
+    <li>Macintosh Operating System version 12 (Monterey) or higher</li>
+    <li>Xcode 13.3 or higher</li>
+</ul>
 <!-- Installation -->
 <div id="installation"></div>
 <h4>Installation</h4>
