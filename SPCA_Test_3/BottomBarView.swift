@@ -33,11 +33,11 @@ struct BottomBarView: View{
                     Image(systemName: "calendar")
                     Text("Events")
             }
-            /*ServicesView()
+            ServicesView()
                 .tabItem {
                     Image(systemName: "list.bullet.rectangle.portrait")
                     Text("Services")
-            }*/
+            }
         }
     }
 }

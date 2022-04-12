@@ -55,8 +55,8 @@ struct PetView: View {
                                                         VStack(alignment: .center){
                                                             Text(animal.name)
                                                                 .font(.title)
+                                                                .fontWeight(.black)
                                                                 .foregroundColor(.white)
-                                                                .bold()
                                                                 .frame(width: 300, alignment: .center)
                                                                 Text(animal.age)
                                                                 .foregroundColor(.white)

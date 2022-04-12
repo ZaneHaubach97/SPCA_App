@@ -32,7 +32,7 @@ struct DetailView: View {
                             
                             Text(animal.name)
                                 .font(.largeTitle)
-                                .fontWeight(.bold)
+                                .fontWeight(.black)
                                 .foregroundColor(.white)
                             
                             Text("Gender: " + animal.gender)
