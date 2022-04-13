@@ -42,6 +42,7 @@ struct FilterView: View {
                 //Spacer()
                 
                 Text("Filter")
+                    .accessibility(identifier: "FilterLabel")
                     .font(.title)
                     .multilineTextAlignment(.center)
                     .padding([.top, .leading, .trailing])

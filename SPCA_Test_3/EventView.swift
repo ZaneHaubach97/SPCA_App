@@ -34,6 +34,7 @@ struct EventView: View {
                                     .fontWeight(.black)
                                     .multilineTextAlignment(.center)
                                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                                    .accessibility(identifier: "eventNameText")
                                     
                                 VStack{
                                     ForEach(event.details, id: \.self){ detail in
@@ -72,6 +73,7 @@ struct EventView: View {
                     }
                 }
             }
+            .accessibility(identifier: "eventViewNav")
         }
     }
 }

@@ -26,6 +26,7 @@ struct ServicesView: View {
                                     .fontWeight(.black)
                                     .multilineTextAlignment(.center)
                                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                                    .accessibility(identifier: "serviceNameText")
                                 
                                 Link(destination: URL(string: service.serviceLink)!, label: {Text("View More Information Online")
                                         .underline()

@@ -22,6 +22,8 @@
 		46CF4CFD28050D0C00098E53 /* ServiceViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CF4CFA28050D0C00098E53 /* ServiceViewer.swift */; };
 		46CF4CFE28050D0C00098E53 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CF4CFB28050D0C00098E53 /* ServiceModel.swift */; };
 		46CF4D0028051A5000098E53 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CF4CFF28051A5000098E53 /* ServicesView.swift */; };
+		46CF4D082805B44300098E53 /* SPCA_Test_3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CF4D072805B44300098E53 /* SPCA_Test_3UITests.swift */; };
+		46CF4D0A2805B44300098E53 /* SPCA_Test_3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CF4D092805B44300098E53 /* SPCA_Test_3UITestsLaunchTests.swift */; };
 		46EB7B9827F37037001D1A1F /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB7B9727F37037001D1A1F /* WebService.swift */; };
 		46EB7B9A27F37143001D1A1F /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB7B9927F37143001D1A1F /* BottomBarView.swift */; };
 		46EB7B9C27F37564001D1A1F /* PetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB7B9B27F37564001D1A1F /* PetView.swift */; };
@@ -34,6 +36,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		46C86A6527DA54F900964DCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46AC1D6D27CE8837001AA2DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46AC1D7427CE8837001AA2DE;
+			remoteInfo = SPCA_Test_3;
+		};
+		46CF4D0B2805B44300098E53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46AC1D6D27CE8837001AA2DE /* Project object */;
 			proxyType = 1;
@@ -62,6 +71,9 @@
 		46CF4CFA28050D0C00098E53 /* ServiceViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceViewer.swift; sourceTree = "<group>"; };
 		46CF4CFB28050D0C00098E53 /* ServiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
 		46CF4CFF28051A5000098E53 /* ServicesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
+		46CF4D052805B44300098E53 /* SPCA_Test_3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPCA_Test_3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46CF4D072805B44300098E53 /* SPCA_Test_3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCA_Test_3UITests.swift; sourceTree = "<group>"; };
+		46CF4D092805B44300098E53 /* SPCA_Test_3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCA_Test_3UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		46EB7B9727F37037001D1A1F /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebService.swift; path = /Users/ehaubach/Documents/Zane_Appliactions/SPCA_Test_3/SPCA_Test_3/WebService.swift; sourceTree = "<absolute>"; };
 		46EB7B9927F37143001D1A1F /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
 		46EB7B9B27F37564001D1A1F /* PetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetView.swift; sourceTree = "<group>"; };
@@ -91,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46CF4D022805B44300098E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,6 +118,7 @@
 			children = (
 				46AC1D7727CE8837001AA2DE /* SPCA_Test_3 */,
 				46C86A6227DA54F900964DCB /* SPCA_Test_3Tests */,
+				46CF4D062805B44300098E53 /* SPCA_Test_3UITests */,
 				46AC1D7627CE8837001AA2DE /* Products */,
 				F813CDF9CD2B78125816306A /* Pods */,
 				ADF1A486D73FD5A86D66217F /* Frameworks */,
@@ -110,6 +130,7 @@
 			children = (
 				46AC1D7527CE8837001AA2DE /* SPCA_Test_3.app */,
 				46C86A6127DA54F900964DCB /* SPCA_Test_3Tests.xctest */,
+				46CF4D052805B44300098E53 /* SPCA_Test_3UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +176,15 @@
 				46C86A6327DA54F900964DCB /* SPCA_Test_3Tests.swift */,
 			);
 			path = SPCA_Test_3Tests;
+			sourceTree = "<group>";
+		};
+		46CF4D062805B44300098E53 /* SPCA_Test_3UITests */ = {
+			isa = PBXGroup;
+			children = (
+				46CF4D072805B44300098E53 /* SPCA_Test_3UITests.swift */,
+				46CF4D092805B44300098E53 /* SPCA_Test_3UITestsLaunchTests.swift */,
+			);
+			path = SPCA_Test_3UITests;
 			sourceTree = "<group>";
 		};
 		ADF1A486D73FD5A86D66217F /* Frameworks */ = {
@@ -218,6 +248,24 @@
 			productReference = 46C86A6127DA54F900964DCB /* SPCA_Test_3Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		46CF4D042805B44300098E53 /* SPCA_Test_3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46CF4D0F2805B44300098E53 /* Build configuration list for PBXNativeTarget "SPCA_Test_3UITests" */;
+			buildPhases = (
+				46CF4D012805B44300098E53 /* Sources */,
+				46CF4D022805B44300098E53 /* Frameworks */,
+				46CF4D032805B44300098E53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46CF4D0C2805B44300098E53 /* PBXTargetDependency */,
+			);
+			name = SPCA_Test_3UITests;
+			productName = SPCA_Test_3UITests;
+			productReference = 46CF4D052805B44300098E53 /* SPCA_Test_3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -225,7 +273,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					46AC1D7427CE8837001AA2DE = {
@@ -233,6 +281,10 @@
 					};
 					46C86A6027DA54F900964DCB = {
 						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 46AC1D7427CE8837001AA2DE;
+					};
+					46CF4D042805B44300098E53 = {
+						CreatedOnToolsVersion = 13.3;
 						TestTargetID = 46AC1D7427CE8837001AA2DE;
 					};
 				};
@@ -252,6 +304,7 @@
 			targets = (
 				46AC1D7427CE8837001AA2DE /* SPCA_Test_3 */,
 				46C86A6027DA54F900964DCB /* SPCA_Test_3Tests */,
+				46CF4D042805B44300098E53 /* SPCA_Test_3UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -268,6 +321,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		46C86A5F27DA54F900964DCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CF4D032805B44300098E53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -373,6 +433,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46CF4D012805B44300098E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46CF4D082805B44300098E53 /* SPCA_Test_3UITests.swift in Sources */,
+				46CF4D0A2805B44300098E53 /* SPCA_Test_3UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -380,6 +449,11 @@
 			isa = PBXTargetDependency;
 			target = 46AC1D7427CE8837001AA2DE /* SPCA_Test_3 */;
 			targetProxy = 46C86A6527DA54F900964DCB /* PBXContainerItemProxy */;
+		};
+		46CF4D0C2805B44300098E53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46AC1D7427CE8837001AA2DE /* SPCA_Test_3 */;
+			targetProxy = 46CF4D0B2805B44300098E53 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -598,6 +672,40 @@
 			};
 			name = Release;
 		};
+		46CF4D0D2805B44300098E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IT493.SPCA-Test-3UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SPCA_Test_3;
+			};
+			name = Debug;
+		};
+		46CF4D0E2805B44300098E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IT493.SPCA-Test-3UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SPCA_Test_3;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -624,6 +732,15 @@
 			buildConfigurations = (
 				46C86A6827DA54F900964DCB /* Debug */,
 				46C86A6927DA54F900964DCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46CF4D0F2805B44300098E53 /* Build configuration list for PBXNativeTarget "SPCA_Test_3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46CF4D0D2805B44300098E53 /* Debug */,
+				46CF4D0E2805B44300098E53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

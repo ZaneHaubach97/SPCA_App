@@ -84,5 +84,85 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D8143CD-F865-439F-B3AD-06F84113A69A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPCA_Test_3UITests/SPCA_Test_3UITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "testBottomBar()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6D8143CD-F865-439F-B3AD-06F84113A69A - cf7132af8fe62f8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SPCA_Test_3UITests.SPCA_Test_3UITests.testBottomBar() -&gt; ()"
+                  moduleName = "SPCA_Test_3UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ehaubach/Documents/Zane_Appliactions/SPCA_Test_3/SPCA_Test_3UITests/SPCA_Test_3UITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "355">
+               </Location>
+               <Location
+                  uuid = "6D8143CD-F865-439F-B3AD-06F84113A69A - cf7132af8fe62e6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SPCA_Test_3UITests.SPCA_Test_3UITests.testBottomBar() -&gt; ()"
+                  moduleName = "SPCA_Test_3UITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ehaubach/Documents/Zane_Appliactions/SPCA_Test_3/SPCA_Test_3UITests/SPCA_Test_3UITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "640">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2744381-1D65-46E7-8721-9F41257D48D8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPCA_Test_3UITests/SPCA_Test_3UITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "testPetDetailView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28D0340A-AE0A-4D81-8C5E-07E9DCA687B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPCA_Test_3UITests/SPCA_Test_3UITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "testFilterButton()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

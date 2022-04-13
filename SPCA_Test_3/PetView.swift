@@ -58,6 +58,8 @@ struct PetView: View {
                                                                 .fontWeight(.black)
                                                                 .foregroundColor(.white)
                                                                 .frame(width: 300, alignment: .center)
+                                                                .accessibility(identifier: "petNameText")
+                                                                
                                                                 Text(animal.age)
                                                                 .foregroundColor(.white)
                                                                 + Text(" - ")
@@ -72,6 +74,7 @@ struct PetView: View {
                                                     .offset(x: self.showFilterMenu ? geometry.size.width/2 : 0)
                                                     .padding(.top)
                                                 }
+                                                .accessibility(identifier: "tapPet")
                                             }
                                         }
                                     }
@@ -87,6 +90,7 @@ struct PetView: View {
                                                 showFilterMenu.toggle()
                                             }
                                         }
+                                        .accessibility(identifier: "filterButton")
                                     }
                                     ToolbarItem(placement: .principal){
                                         Image("SPCA_logo_top")
@@ -96,6 +100,7 @@ struct PetView: View {
                                     }
                                     ToolbarItem(placement: .navigationBarTrailing){
                                         Link("Donate", destination: URL(string: "https://winchesterspca.org/donate/")!)
+                                            .accessibility(identifier: "showDonateScreen")
                                     }
                                 }
                             }

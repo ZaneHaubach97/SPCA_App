@@ -34,6 +34,7 @@ struct DetailView: View {
                                 .font(.largeTitle)
                                 .fontWeight(.black)
                                 .foregroundColor(.white)
+                                .accessibilityIdentifier("animalNameText")
                             
                             Text("Gender: " + animal.gender)
                                 .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)

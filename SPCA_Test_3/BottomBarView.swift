@@ -28,16 +28,19 @@ struct BottomBarView: View{
                     Image(systemName: "pawprint")
                     Text("Pets")
             }
+                .accessibilityIdentifier("petView")
             EventView()
                 .tabItem {
                     Image(systemName: "calendar")
                     Text("Events")
             }
+                .accessibilityIdentifier("eventView")
             ServicesView()
                 .tabItem {
                     Image(systemName: "list.bullet.rectangle.portrait")
                     Text("Services")
             }
+                .accessibilityIdentifier("servicesView")
         }
     }
 }

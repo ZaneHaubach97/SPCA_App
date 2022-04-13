@@ -54,7 +54,7 @@ class SPCA_Test_3Tests: XCTestCase {
     }
     
     //Test used to check that the HTML retrieving functionality of the application works properly, this test makes a network call and then checks that the returned value is a valid HTML document.
-    func testGetHTML(){
+    func testGetHTMLEvents(){
         let ev = EventViewer()
         var htmlResult = ""
         let url = "https://raw.githubusercontent.com/ZaneHaubach97/SPCA_App/Dev/SPCA_Test_3Tests/testHTML.html"
@@ -69,7 +69,7 @@ class SPCA_Test_3Tests: XCTestCase {
     }
     
     //Test used to ensure the HTML parsing functionality of the application is working as intended and is returning the values desired.  This test takes the sample HTML string retrieved in the test above and checks that the application is gathering the correct information and storing it properly.
-    func testParseHTML(){
+    func testParseEventHTML(){
         let ev = EventViewer()
         let testHTML = """
             <HTML>
@@ -90,6 +90,36 @@ class SPCA_Test_3Tests: XCTestCase {
         XCTAssertEqual(event.image, "testImage.jpg")
         XCTAssertEqual(event.details[0], "testP")
     }
+    
+    func testGetHTMLService(){
+        let sv = ServiceViewer()
+        var htmlResult = ""
+        let url = "https://raw.githubusercontent.com/ZaneHaubach97/SPCA_App/Dev/SPCA_Test_3Tests/testHTML.html"
+        let expectation = self.expectation(description: "Getting HTML")
+        sv.getHTML(URLString: url){ returnedHTML in
+            htmlResult = returnedHTML
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+        print(htmlResult)
+        XCTAssert(isValidHtmlString(htmlResult))
+    }
+    
+    func testParseServiceHTML(){
+        let sv = ServiceViewer()
+        let testHTML = """
+        <li id="menu-item-3497" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3497"><a href="#">Services</a>
+            <ul class="sub-menu">
+                <li id="menu-item-3107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3107"><a href="www.testLink.com">testServiceName</a></li>
+            </ul>
+        </li>
+        """
+        let testService: [Service] = sv.parseServiceHTML(html: testHTML)
+        let service = testService[0]
+        XCTAssertEqual(service.serviceName, "testServiceName")
+        XCTAssertEqual(service.serviceLink, "www.testLink.com")
+    }
+    
     
     //Simple regex used to determine if the given string is valid HTML
     func isValidHtmlString(_ value: String) -> Bool {
