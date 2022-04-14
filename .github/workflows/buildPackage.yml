@@ -25,8 +25,7 @@ jobs:
       # step 1, use Marketplace action called Checkout@v2, to checkout the code
     - uses: actions/checkout@v2 #'uses' keyword launches the Marketplace action
       # step 2, verbosely build the package using the `swift` CLI
-    - name: Build
-      run: swift build -v #'run' keyword executes the command, as if it's run in terminal
-      # step 3, verbosely test the package using the `swift` CLI
-    - name: Run tests
-      run: swift test -v #'run' keyword executes the command, as if it's run in terminal
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode_12.2.app && /usr/bin/xcodebuild -version
+    - name: Run unit tests
+      run: xcodebuild test -scheme YourProject -workspace YourProject.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=14.2' | xcpretty && exit ${PIPESTATUS[0]}
