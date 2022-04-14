@@ -80,7 +80,7 @@ class SPCA_Test_3UITests: XCTestCase {
         tapPet.tap()
         
         let petDetailView = app.staticTexts["animalNameText"]
-        XCTAssert(petDetailView.waitForExistence(timeout: 1.0))
+        XCTAssert(petDetailView.waitForExistence(timeout: 5.0))
     }
 
 }
